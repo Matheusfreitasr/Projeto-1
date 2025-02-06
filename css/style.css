@@ -19,13 +19,14 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color:#f8f9fa;
+    background-color: #f8f9fa;
     height: 70px;
     display: flex;
     align-items: center;
     padding: 0 10px;
     box-shadow: 0px 2px 5px rgba(14, 13, 13, 0.349);
 }
+
 .navbar-brand img {
     mix-blend-mode: multiply;
 }
@@ -35,7 +36,7 @@ body {
 }
 
 .navbar-collapse.show {
-    display: block !important; 
+    display: block !important;
     text-align: center;
     background: linear-gradient(135deg, #27445dc9, #71bbb2);
     padding: 10px 0;
@@ -199,6 +200,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    cursor: default;
 }
 
 .card:hover {
@@ -254,6 +256,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.value-em-breve {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, opacity 0.s ease-in-out;
+    opacity: 0;
+}
+
+.card-hover:hover .value-em-breve {
+    color: #497D74;
+    opacity: 1;
+}
+
 .footer {
     background-color: #f8f9fa;
     padding: 30px 0;
@@ -301,7 +316,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    
+
     .hero h2 {
         font-size: 2.5rem;
     }
